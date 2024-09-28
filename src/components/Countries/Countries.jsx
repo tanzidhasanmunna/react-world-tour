@@ -39,7 +39,7 @@ export default function Countries() {
       </div>
       <div className="flag-container">
         {
-            visitedFlags.map((flag, idx) => <img  src={flag} alt="" /> )
+            visitedFlags.map((flag, idx) => <img  key={idx} src={flag} alt="" /> )
         }
       </div>
       {/* display countries */}
